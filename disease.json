@@ -1,0 +1,117 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "what is the treatment of disease",
+            "intents": [
+                              
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel it",
+                        "please cancel the speech",
+                        "please cancel",
+                        "cancel this",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "please help me",
+                        "open help",
+                        "i want help",
+                        "please help",
+                        "want help",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "please stop it",
+                        "stop it",
+                        "stop",
+                        "please stop"
+                    ]
+                },
+                
+                {
+                    "name": "DiseaseIntent",
+                    "slots": [
+                        {
+                            "name": "diseasenames",
+                            "type": "diseasenames"
+                        }
+                    ],
+                    "samples": [
+                        "i'm having {diseasenames}",
+                        "i am having {diseasenames}",
+                        "{diseasenames}",
+                        "i am suffering from {diseasenames}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "diseasenames",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "stomach ulcers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tuberclosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "depression"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diarrhea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diabetes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cataract"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dengu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "small pox"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fever"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
